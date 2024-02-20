@@ -10,7 +10,7 @@ class SimuladorController extends Controller
     private $simulacao = [];
 
     public function simular(Request $request)
-    {
+    { 
         $this->carregarArquivoDadosSimulador()
              ->simularEmprestimo($request->valor_emprestimo)
              ->filtrarInstituicao($request->instituicoes)
